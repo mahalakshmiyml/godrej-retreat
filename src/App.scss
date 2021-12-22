@@ -50,3 +50,57 @@ $white-color: #ffffff;
 
 
  }
+ #top-header {
+  background-color: $secondary-color;
+}
+
+#main-header {
+  box-shadow: 1px 1px 1px #ceced4;
+  .nav-item {
+      border-right: 1px solid $secondary-color;
+      padding: 0px 20px;
+      &:last-child {
+          border-right: 0px;
+      }
+      .nav-link {
+          padding: 0px;
+          color: $secondary-color;
+          font-weight: 600;
+          text-transform: uppercase;
+          &:hover {
+              color: $ternary-color;
+          }
+      }
+      .dropdown-menu {
+          width: 100%;
+          .dropdown-item {
+              color: $secondary-color;
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: 14px;
+              &:hover { 
+                  color: $primary-color;
+                  background-color: transparent;
+              }
+          }
+      }
+  }
+}
+#slider {
+  position: relative;
+  p {
+      font-size: 18px;
+  }
+  .form-control {
+      background: $primary-color;
+      border: none;
+      border-radius: 0px;
+      font-size: 14px;
+      &::placeholder {
+          color: $secondary-color;
+      }
+  }
+  .floatingTextarea2 {
+      height: 50px;
+  }
+}
